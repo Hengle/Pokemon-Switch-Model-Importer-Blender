@@ -110,7 +110,7 @@ def BuildArmature(mon, filename):
         eb.tail = (0,0,10.)
         eb.matrix = bone_matrix
         eb.use_inherit_rotation = True
-        if blender_version[0] == 4:
+        if blender_version[0] >= 4:
             eb.inherit_scale = 'NONE'
         else:
             eb.use_inherit_scale = False
